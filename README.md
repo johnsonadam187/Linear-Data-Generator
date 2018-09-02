@@ -1,5 +1,4 @@
-# Projects
-Linear Data Genereator
+# Linear Data Genereator
 Function for dataset generator which randomly chooses y values based randomly from an inital regression derived from user inputs/specifications.
 x_axis_start is the first value on the x axis
 x_axis_end is the last value on the x axis
