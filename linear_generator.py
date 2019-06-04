@@ -2,14 +2,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd  
 
-def linear_generator(x_axis_start, x_axis_end, m_value, c_value):
+def linear_generator(x_axis_start, x_axis_end, m_value, b_value):
     #generate x axis
-    x_axis = np.arange(x_axis_start, x_axis_end, step=x_axis_start)
+    x_axis = np.arange(x_axis_start, x_axis_end, step=abs(x_axis_start))
 
     #generate best fits line
     y_coords = np.empty(len(x_axis))
     for i in range(len(x_axis)):
-        y_coords[i] = m_value*x_axis[i]+c_value
+        y_coords[i] = m_value*x_axis[i]+b_value
 
     #generate new y values
     y_value_spread = (y_coords[i]/np.random.randint(0, 10))
